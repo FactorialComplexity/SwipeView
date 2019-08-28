@@ -516,7 +516,7 @@
             }
         }
     }
-    return offset;
+    return MAX(offset, 0.0);
 }
 
 - (void)setFrameForView:(UIView *)view atIndex:(NSInteger)index
