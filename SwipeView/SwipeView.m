@@ -516,7 +516,10 @@
             }
         }
     }
-    return MAX(offset, 0.0);
+    if (_numberOfItems == 1) {
+    	return MAX(offset, 0.0);
+	}
+    return offset;
 }
 
 - (void)setFrameForView:(UIView *)view atIndex:(NSInteger)index
